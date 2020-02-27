@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.verde{
+    
+    list-style-type: none;
+    padding: 10px;
+}
+
+.vermelho{
+    background-color: darkred;
+}
+ 
+#titulo, #subtitulo{
+    text-align: center;
+}
+
+#box{
+    background-color: green;
+    width: 40%;
+    margin: 0 auto;
+    border: solid red 1px;
+    border-radius: 6px;
+}
+

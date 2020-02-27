@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário JS</title>
+    <link rel="stylesheet" href="../../Generetion/HTML/assets/css/style-formulario-teste.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="box">
+        <header>
+            <h1>Cadastro</h1>
+        </header>
+    
+        <h3>Prencha o formulário para seguir com o cadastro.</h3>
+        
+        <br><br>
+
+        <form action="#" method="POST">
+            <label for="nome" >
+                Nome:
+            </label>
+            <input type="text" id="nome" maxlength="20" size="15" placeholder="Nome" required>
+            
+            <br><br>
+            
+            <label for="#">
+                Idade:
+            </label>
+            <Input type="number" id="idade" min="18" max="29">
+                
+            <br><br>
+                
+            <label for="">
+                    Nascimento:
+            </label>
+            <input type="date" id="nascimento">
+                
+            <br><br>
+                
+            <label for="">
+                Observção:
+            </label>
+            <textarea rows="4" cols="20" id="observacao" maxlength="400" style="resize: none;"></textarea>
+                
+            <br><br>
+                
+            <select id="estados">
+                <option value="" selected disabled >Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select>
+                
+            <br><br>
+                
+            <label for="">
+                Senha:
+            </label>
+            <input type="password" id="senha">
+                
+            <br><br>
+                
+            <label for="">
+                F
+            </label>
+            <input type="radio" name="sexo" value="Feminino">
+            <label for="">
+                M
+            </label>
+            <input type="radio" name="sexo" value="Masculino">
+            
+            <br><br>
+            
+            <input type="checkbox" id="almoco">
+            <label for="">Almoço</label>
+
+            <br>
+        
+            <input type="checkbox" id="vt">
+            <label for="">Vale Transporte</label>
+            
+            <br><br>
+            
+            <input type="submit" value="Enviar" onclick="mostrar()">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+
+    <script src="assets/js/ex3.js"></script>
+</body>
+</html>
