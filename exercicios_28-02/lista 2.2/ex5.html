@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var texto = prompt("Digite em minúsculo:");
+        var resultado = "";
+        var vetor = texto.split(' ');
+
+        for( var i=0; i<vetor.length; i++){
+            //replace (valor atual, novo valor)
+            //slice (a partir de, fim) retira a cadeia de caracteres da posição mencionada nos parênteses
+
+            vetor[i] = vetor[i].replace(vetor[i].slice(0,1),vetor[i].slice(0,1).toUpperCase())
+
+            resultado = resultado + " " + vetor[i]
+        }
+
+        alert(resultado)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var n = prompt("Numero ou Palavra: ")
+        reverse = n.split('').reverse().join('')
+
+        //split: restira caracteres que estão entre '' e transforma uma string em array
+        //reverse: inverte um array
+        //join: transforma um array em string
+
+        document.write(reverse)
+
+        // parte 2
+
+        if ( n == reverse){
+            document.write("<br>" + "Palindrome") 
+        }
+        else{
+            document.write("<br>" + "It´s not a palindrome")
+        }
+    </script>
+</body>
+</html>
