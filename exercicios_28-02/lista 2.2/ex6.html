@@ -9,12 +9,17 @@
 <body>
     
     <script>
-        
-        n = "carro vermelho rebaixado"
-        n2 = n.split("carro").join('')
-        n3 = n2.split("rebaixado").join('')
+        var frase = prompt("Digite uma frase: ");
+            vetor = frase.split(" ");
+            maior = vetor[0];
 
-        console.log(n3)
+        for(i=1; i<vetor.length; i++){
+
+            if(maior.length < vetor[i].length){
+                maior = vetor[i]
+            }
+        }
+        console.log(maior)    
     </script>
 </body>
 </html>
