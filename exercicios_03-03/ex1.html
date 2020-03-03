@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="grupo">
+        <li class="item">item 1<button id="remover" onclick="remover()" style="border-radius:50%; background-color: red">x</button></li>
+        <li class="item">item 2<button id="remover" onclick="remover()" style="border-radius:50%; background-color: red">x</button></li>
+    </ul>
+    <button id="adicionar" onclick="adicionar()" title="Adicionar um item">Adicionar</button>
+    <button id="remover" onclick="limpar()">Remover</button>
+
+    <script>
+
+        function adicionar(){
+            
+            //var continuar = confirm("Vc deseja adicionar mesmo um item? s/n")
+
+            //if(continuar == "s"){
+
+            var add = prompt("Adiconar:")
+            var ul = document.getElementById("grupo");
+            var li = document.createElement("li");
+            var button = document.createElement("button") //criação do elemento
+            li.className="item";
+            li.appendChild(document.createTextNode(add));
+            li.appendChild(button)
+            ul.appendChild(li);
+            //}
+        }
+        
+        function remover(){
+
+
+        }
+
+        function limpar(){
+
+            var ul = document.getElementById("grupo");
+            ul.innerHTML="";
+            ul.length = 0;
+        }
+
+    </script>
+
+</body>
+</html>
