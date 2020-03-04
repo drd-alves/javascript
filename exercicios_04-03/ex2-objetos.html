@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //criando nosso modelo
+        //criar metodo construtor = constrói o modelo
+        //modelo = conjunto de atributs(caracteristicas) e metodos(ações)
+        //todo modelo começa com letra maíuscula
+
+        //inicio do método construtor
+        function MinhaCaneta(_cor, _tipo, _tamanho, _temTinta, _material, _expessuraPonta,_tampado){
+            //atributos
+            this.cor=_cor
+            this.tipo=_tipo
+            this.tamanho=_tamanho
+            this.temTinta=(_temTinta || "Sim")
+            this.material=_material
+            this.expessuraPonta=_expessuraPonta
+            this.tampado=(_tampado || "Sim")
+            //fim dos atributos
+        }
+        
+        //inicio metodod abrir
+        // = permite a criação da ação
+        MinhaCaneta.prototype.abrir=function(){
+            if(this.tampado=="Sim"){
+                this.tampado="Não"
+            }
+        }
+        //fim do método
+
+        //inicio metodod abrir
+        // = permite a criação da ação
+        MinhaCaneta.prototype.fechar=function(){
+            if(this.tampado=="Não"){
+                this.tampado= "Sim"
+            }
+        }
+        //fim do método
+
+        
+
+        // temTinta = "Não" - se atribuir algo, aparecera a atribuíção
+        //instanciar (em ordem de variáveis)
+        caneta1=new MinhaCaneta("Azul","Hidrográfica","10cm","","Plastico","2mm","Não")
+        caneta2=new MinhaCaneta("Transparente","Esferográfica","15cm","","Plastico","0.5mm","")
+        
+        caneta1.fechar();
+        caneta2.abrir();
+
+        //brincando
+        //comparar as cores
+        // if(caneta1.cor==caneta2.cor  ){
+        //     alert("Cores iguais")
+        // }
+        // else{
+        //     alert("Cores diferentes")
+        // }
+
+
+        //imprimindo
+         var caneta1 = "Cor: " + caneta1.cor + "\nTipo: " + caneta1.tipo + "\nTamanho: " + caneta1.tamanho + "\nTem tinta: " + caneta1.temTinta + "\nMaterial: " + caneta1.material + "\nExpessura da ponta: " + caneta1.expessuraPonta + "\nTampado: " + caneta1.tampado; 
+
+        var caneta2 = "Cor: " + caneta2.cor + "\nTipo: " + caneta2.tipo + "\nTamanho: " + caneta2.tamanho + "\nTem tinta: " + caneta2.temTinta + "\nMaterial: " + caneta2.material + "\nExpessura da ponta: " + caneta2.expessuraPonta + "\nTampado: " + caneta2.tampado
+
+        alert("Caneta 1\n" +  caneta1 + "\n" + "\nCaneta 2\n "  + caneta2)
+    </script>
+</body>
+</html>

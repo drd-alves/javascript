@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="nome">
+    <input type="button" value="Clique aqui" id="botao">
+
+    <script>
+
+    try{
+
+        var nome      //var global
+        document.getElementById("botao").addEventListener('click', function(){
+            nome = document.getElementById("nome").value
+            alert(nome)
+        })
+
+        // debugger = comando que marca um breakpoint no console 
+
+        document.getElementById('botao').addEventListener('mouseover', function(){
+            document.getElementById('nome').style.color="red"
+        })
+
+        document.getElementById('botao').addEventListener('mouseout', function(){
+            document.getElementById("nome").innerHTML
+        })
+    }
+    catch(error){
+        alert("se fudeu")
+    }    
+
+    </script>
+</body>
+</html>

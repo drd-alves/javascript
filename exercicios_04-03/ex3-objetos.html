@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button type="button"id="acelerar" onclick="acelerar()">Acelerar</button>
+    
+    <script>
+        
+        //metodo construtor
+        function carro(_marca,_anoFabricacao,_velocidadeMaxima,_velocidadeAtual){
+            
+            this.marca = _marca
+            this.anoFabricacao = _anoFabricacao
+            this.velocidadeMaxima = _velocidadeMaxima
+            this.velocidadeAtual = _velocidadeAtual=[]
+        }
+        
+        carro.prototype.acelerar=function(){
+            
+            // for(i=0; i<=_velocidadeMaxima.length; i++){
+            //     this.velocidadeAtual[i]+= this.velocidadeAtual[i]
+            // }
+        }
+        
+        fiesta = new carro("Ford", "2014", 5, 0)
+        
+        fiesta.acelerar()
+        
+        
+    </script>
+</body>
+</html>
