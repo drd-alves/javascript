@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* principal */
+header{
+    text-align: center;
+}
+
+h2{
+    color: blueviolet;
+    padding-bottom: 20px;
+}
+
+#principal{
+    width: 600px;
+    float: left;
+}
+
+#logo{
+    float: left;
+    padding-left: 10px;
+}
+
+/* sections */
+main{
+    width: 900px;
+    margin: 0 auto;
+}
+
+h3{
+    color: blueviolet;
+} 
+
+#sec1{
+    width: 300px;
+    float: left;
+    padding-left: 10px;
+}
+
+#sec2{
+    width: 300px;
+    float: left;
+    padding-left: 10px;
+}
+
+#sec3{
+    width: 300px;
+    float: left;
+    padding-left: 10px;
+}
+
+#box{
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+}

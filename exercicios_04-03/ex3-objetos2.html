@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button type="button"id="acelerar" onclick="acelerar()">Acelerar</button>
+    <button type="button"id="acelerar" onclick="desacelerar()">Desacelerar</button>
+
+    <script>
+        
+        //metodo construtor
+        function Carro(_marca,_anoFabricacao,_velocidadeMaxima,_velocidadeAtual){
+            
+            this.marca = _marca
+            this.anoFabricacao = _anoFabricacao
+            this.velocidadeMaxima = _velocidadeMaxima
+            this.velocidadeAtual = _velocidadeAtual
+        }
+        
+        function acelerar(){
+
+            Carro.prototype.acelerar=function(){
+
+                if(this.velocidadeAtual < this.velocidadeMaxima ){
+                    this.velocidadeAtual++
+                }
+                else{
+                    console.log("Vel. Máxima")
+                }
+            }
+            fiesta.acelerar()
+            console.log(fiesta)    
+        }
+
+        function desacelerar(){
+
+            Carro.prototype.desacelerar=function(){
+                if(this.velocidadeAtual > 0 ){
+                    this.velocidadeAtual--
+                }
+                else{
+                    console.log("Vel. = 0")
+                }
+            }
+            fiesta.desacelerar()
+            console.log(fiesta)    
+        }
+
+        fiesta = new Carro("Ford", "2014", 190, 0)
+
+    </script>
+</body>
+</html>

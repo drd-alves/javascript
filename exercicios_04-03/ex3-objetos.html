@@ -8,31 +8,44 @@
 </head>
 <body>
     
-    <button type="button"id="acelerar" onclick="acelerar()">Acelerar</button>
+    <button type="button" id="acelerar" onclick="acelerar()">Acelerar</button>
+    <button type="button" id="desacelerar" onclick="desacelerar()">Desacelerar</button>
     
     <script>
         
         //metodo construtor
-        function carro(_marca,_anoFabricacao,_velocidadeMaxima,_velocidadeAtual){
+        function Carro(_marca,_anoFabricacao,_velocidadeMaxima,_velocidadeAtual){
             
             this.marca = _marca
             this.anoFabricacao = _anoFabricacao
             this.velocidadeMaxima = _velocidadeMaxima
-            this.velocidadeAtual = _velocidadeAtual=[]
+            this.velocidadeAtual=[ _velocidadeAtual] 
         }
         
-        carro.prototype.acelerar=function(){
+        function acelerar(){
+
+            Carro.prototype.acelera=function(){
             
-            // for(i=0; i<=_velocidadeMaxima.length; i++){
-            //     this.velocidadeAtual[i]+= this.velocidadeAtual[i]
-            // }
+                for(this.velocidadeAtual = 0; this.velocidadeAtual<=this.velocidadeMaxima; this.velocidadeAtual++){
+                    console.log("Vel. Atual: " + this.velocidadeAtual + " Km/h")
+                }    
+            }
+            fiesta.acelera()
+        }
+
+        function desacelerar(){
+
+            Carro.prototype.desacelera=function(){
+                for(this.velocidadeAtual = 5; this.velocidadeAtual=0; this.velocidadeAtual--){
+                   console.log("Vel. Atual: " + this.velocidadeAtual + " Km/h") 
+                }
+            }
+            fiesta.desacelera()
         }
         
-        fiesta = new carro("Ford", "2014", 5, 0)
+        fiesta = new Carro("Ford", "2014", 50, "")
         
-        fiesta.acelerar()
-        
-        
+        // fiesta.acelerar()
     </script>
 </body>
 </html>
